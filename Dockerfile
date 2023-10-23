@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jdk-jammy
+FROM eclipse-temurin:11-jdk-focal
 RUN apt-get -y update
 RUN apt-get -y install language-pack-zh-hans*
 WORKDIR /app
