@@ -3,4 +3,5 @@ WORKDIR /zkb
 COPY entrypoint.sh /zkb/entrypoint.sh
 ENV REDIS_HOST=localhost
 EXPOSE 8080
+RUN RUN chmod +x /zkb/entrypoint.sh
 ENTRYPOINT [ "/zkb/entrypoint.sh" ]
