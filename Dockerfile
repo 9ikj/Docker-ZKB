@@ -1,8 +1,7 @@
 FROM eclipse-temurin:11-jdk-jammy
+RUN apt-get -y update
+RUN apt-get -y install language-pack-zh-hans*
 WORKDIR /app
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 871920D1991BC93C
-RUN apt-get update
-RUN apt-get install language-pack-zh-hans*
 RUN wget -O ZeroKingBot.jar https://ghproxy.com/https://github.com/9ikj/ZeroKingBot/releases/download/4.2.9/ZeroKingBot.jar
 ENV REDIS_HOST=localhost
 ENV TZ="Asia/Shanghai"
