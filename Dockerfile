@@ -1,6 +1,6 @@
 FROM eclipse-temurin:11-jre-focal
 RUN apt-get -y update && \
-    apt-get -y install fonts-wqy-microhei && \
+    apt-get -y install fonts-noto-cjk && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR /app
