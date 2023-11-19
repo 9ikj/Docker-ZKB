@@ -2,7 +2,7 @@ FROM eclipse-temurin:11-jre-alpine
 RUN apk add --no-cache font-noto-cjk wget && \
     rm -rf /var/cache/apk/*
 WORKDIR /app
-RUN wget -O ZeroKingBot.jar https://ghproxy.com/https://github.com/9ikj/ZeroKingBot/releases/download/4.2.9/ZeroKingBot.jar
+RUN wget -O ZeroKingBot.jar https://mirror.ghproxy.com/https://github.com/9ikj/ZeroKingBot/releases/download/4.2.9/ZeroKingBot.jar
 VOLUME [ "/app/db" ]
 ENV REDIS_HOST=localhost
 ENV TZ="Asia/Shanghai"
