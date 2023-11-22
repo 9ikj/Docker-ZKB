@@ -9,7 +9,7 @@
 version: '3'
 services:
   zkb:
-    image: registry.cn-shanghai.aliyuncs.com/9ikj/docker-zkb:master
+    image: registry.cn-shanghai.aliyuncs.com/9ikj/docker-zkb:latest
     container_name: zkb
     ports:
       - "8080:8080"
